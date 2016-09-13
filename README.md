@@ -14,7 +14,7 @@
 
 ### 代码示例
 
-先定义一个实体（Event）
+先定义一个实体（Event），代码如下：
 
 ```
 public class UserEvent {
@@ -33,13 +33,13 @@ public class UserEvent {
 }
 ```
 
-发送事件
+发送事件，代码如下：
 
 ```
 RxBus.get().post(new UserEvent (1, "yoyo"));
 ```
 
-接收事件
+接收事件，代码如下：
 
 ```
 Subscription rxSubscription = RxBus.get().toObserverable(UserEvent.class)
