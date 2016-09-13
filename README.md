@@ -2,8 +2,9 @@
 
 参考：http://www.jianshu.com/p/ca090f6e2fe2
 
-RxBus工作流程图：
-![](./rxbus_flow.png)
+### 工作流程图
+
+![1](rxbus_flow.png)
 
 ### 实现思路
 
@@ -13,7 +14,7 @@ RxBus工作流程图：
 
 ### 代码示例
 
-这是需要发送实体Event
+先定义一个实体（Event）
 
 ```
 public class UserEvent {
@@ -32,13 +33,13 @@ public class UserEvent {
 }
 ```
 
-发送事件:
+发送事件
 
 ```
 RxBus.get().post(new UserEvent (1, "yoyo"));
 ```
 
-接收事件:
+接收事件
 
 ```
 Subscription rxSubscription = RxBus.get().toObserverable(UserEvent.class)
