@@ -3,7 +3,7 @@
 参考：http://www.jianshu.com/p/ca090f6e2fe2
 
 RxBus工作流程图：
-![](http://upload-images.jianshu.io/upload_images/937851-626d20547a788e6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./rxbus_flow.png)
 
 ### 实现思路
 
@@ -12,6 +12,8 @@ RxBus工作流程图：
 3. 在我们需要发送事件的地方，将事件post至Subject，此时Subject作为Observer接收到事件（onNext），然后会发射给所有订阅该Subject的订阅者。
 
 ### 代码示例
+
+这是需要发送实体Event
 
 ```
 public class UserEvent {
@@ -68,7 +70,7 @@ protected void onDestroy() {
 }
 ```
 
-RxBus的优势：
+### RxBus的优势
 
 - 轻量（一个类，几个方法）
 - 对Rx的支持
