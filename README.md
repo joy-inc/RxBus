@@ -14,7 +14,7 @@
 
 ### 代码示例
 
-先定义一个实体（Event），代码如下：
+先定义一个实体（UserEvent），代码如下：
 
 ```
 public class UserEvent {
