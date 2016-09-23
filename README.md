@@ -2,6 +2,33 @@
 
 参考：http://www.jianshu.com/p/ca090f6e2fe2
 
+### Add RxBus to your project
+
+Gradle:
+
+```
+compile 'com.joy.rxbus:RxBus:1.0.0'
+```
+
+Maven:
+
+```
+<dependency>
+  <groupId>com.joy.rxbus</groupId>
+  <artifactId>RxBus</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+ Ivy:
+
+ ```
+<dependency org='com.joy.rxbus' name='RxBus' rev='1.0.0'>
+  <artifact name='$AID' ext='pom'></artifact>
+</dependency>
+ ```
+
 ### 工作流程图
 
 ![1](rxbus_flow.png)

@@ -1,4 +1,4 @@
-package com.rxbus;
+package com.joy.rxbus;
 
 import rx.Observable;
 import rx.subjects.PublishSubject;
